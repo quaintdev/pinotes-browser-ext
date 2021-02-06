@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "pinotes",
+    "description": "Save notes from your browser to self hosted server",
+    "version": "1.1",
+    "browser_specific_settings": {
+        "gecko": {
+            "strict_min_version": "54.0a1"
+        }
+    },
+    "sidebar_action": {
+        "default_icon": "icons/star.png",
+        "default_title": "pinotes",
+        "default_panel": "sidebar/panel.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "<all_urls>"
+    ],
+    "commands": {
+        "_execute_sidebar_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            }
+        }
+    }
+}
